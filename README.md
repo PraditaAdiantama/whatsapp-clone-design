@@ -1,6 +1,6 @@
 # whatsapp_design
 
-A new Flutter project.
+Learning project by creating Whatsapp clone design using flutter
 
 ## Getting Started
 
