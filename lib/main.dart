@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_design/pages/home_pages.dart';
+import 'package:whatsapp_design/features/home/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Scaffold(
-        backgroundColor: Color(0xFFF0F2F5),
-        body: Home(),
-      ),
+      initialRoute: '/',
+      routes: {
+        "/": (context) => const HomePage(),
+      },
     );
   }
 }
